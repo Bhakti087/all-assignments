@@ -8,7 +8,11 @@
 */
 
 function isAnagram(str1, str2) {
+  const type1 = str1.toLowerCase().split('').sort().join('')
+  const type2 = str2.toLowerCase().split('').sort().join('')
 
+  return type1 === type2
 }
 
-module.exports = isAnagram;
+// isAnagram('hello', 'hello!')
+module.exports = isAnagram
